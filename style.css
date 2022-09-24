@@ -37,6 +37,7 @@ p{
 }
 
 .heading__container{
+	width: 100%;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -52,6 +53,7 @@ p{
 	display: flex;
 	align-items: center;
 	gap: 1rem;
+	margin-right: 2rem;
 }
 
 .notify div{
@@ -130,9 +132,9 @@ p{
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
 
-@media all and (max-width: 600px){
+@media screen and (max-width: 600px){
 	.container{
-		width: 90%;
+		width: 100%;
 	}
 
 	.notification__container img{
