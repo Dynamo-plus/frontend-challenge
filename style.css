@@ -1,0 +1,153 @@
+:root{
+	--primary-1-clr: hsl(1, 90%, 64%);
+	--primary-2-clr:  hsl(219, 85%, 26%);
+	--light-clr: hsl(0, 0%, 100%);
+	--blue-0: hsl(224, 21%, 14%);
+	--blue-1: hsl(219, 12%, 42%);
+	--blue-2: hsl(219, 14%, 63%);
+	--blue-3: hsl(205, 33%, 90%);
+	--blue-4: hsl(211, 68%, 94%);
+	--blue-5: hsl(210, 60%, 98%);
+
+	--font-size: 16px;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Plus Jarkatan Sans', sans-serif;
+	line-height: 1.5;
+	scroll-behavior: smooth;
+}
+
+body{
+	background: var(--light-clr);
+	display: grid;
+	place-items: center;
+	color: var(--blue-0);
+}
+
+p{
+	font-size: var(--font-size);
+}
+.container{
+	width: 60%;
+	padding: 2rem;
+}
+
+.heading__container{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 2rem;
+}
+
+.heading__container small:hover{
+	color: var(--primary-2-clr);
+	cursor: pointer;
+}
+.notify{
+	color: var(--blue-0);
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+}
+
+.notify div{
+	background: var(--primary-2-clr);
+	padding: 0.1rem 0.8rem;
+	border-radius: 6px;
+	color: var(--light-clr);
+}
+
+
+.notification__container{
+	background: var(--blue-5);
+	border-radius: 4px;
+	padding: 0.5rem;
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	margin-block-start: 1rem; 
+}
+
+.notification__container img{
+	width: 8%;
+}
+
+
+.content p{
+	color: var(--blue-1);
+	position: relative;
+}
+.content p strong:nth-child(1){
+	color: var(--blue-0);
+}
+.content p strong:nth-child(2){
+	color: var(--blue-1);
+}
+.content p strong:hover{
+	color: var(--primary-2-clr);
+}
+
+.content small{
+	color: var(--blue-2);
+}
+
+.circle{
+	border-radius: 50%;
+	font-size: 5px;
+	padding: 2px 5px;
+	background-color: var(--primary-1-clr);
+	position: relative;
+	bottom: 0.5rem;
+	left: 0.1rem;
+}
+
+.group{
+	padding: 0.5rem;
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+}
+
+.group img{
+	width: 8%;
+}
+.message{
+	background: var(--blue-3);
+	color: var(--blue-0);
+	margin-left: 5rem;
+	padding: 1rem;
+}
+
+.float{
+	position: relative;
+	left: 35%;
+	
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media all and (max-width: 600px){
+	.container{
+		width: 90%;
+	}
+
+	.notification__container img{
+		width: 16%;
+	}
+
+	.message{
+		margin-left: 3rem;
+	}
+
+	.group img{
+		width: 16%;
+	}
+
+	.float{
+		left: 0;
+	}
+}
